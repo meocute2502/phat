@@ -1,5 +1,24 @@
 @extends('master')
 @section('content')
+<script>
+	function handleProductNumber(c){
+		var inputEl = document.querySelector('input[name=number-product]');
+		var inputVl = parseInt(inputEl.value);
+		switch(c){
+			case '-':{
+				if(inputVl>0)
+					inputEl.value= inputVl-1;
+					break;
+			}
+			default:{
+				if(inputVl<{{$sanpham->quantity}})
+					inputEl.value= inputVl+1;
+				break;
+			}
+			
+			}
+		}
+	</script>
 <div style="background-color: #ccccff">
 <div class="inner-header" style="background-color: #ccccff">
 		<div class="container">
@@ -47,21 +66,10 @@
 
 							<p>Số lượng còn lại: {{$sanpham->quantity}}</p>
 							<div class="single-item-options">
-								<!-- <select class="wc-select" name="color">
-									<option>Số lượng</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
-									<option value="10">10</option>
-								</select> -->
 								<form action="{{route('themgioihang',$sanpham->id)}}">
-									<input type="number" value="1" min="1" max="{{$sanpham->quantity}}" name="number-product">
+									<button type="button" onclick="handleProductNumber('-')">-</button>
+									<input type="number" value="1" min="1" max="{{$sanpham->quantity}}" name="number-product" >
+									<button type="button" onclick="handleProductNumber('+')">+</button>
 									<button type="submit" class="add-to-cart" ><i class="fa fa-shopping-cart"></i></button>
 								</form>
 								
@@ -171,4 +179,5 @@
 			</div>
 		</div> <!-- #content --->
 	</div> <!-- .container -->
+	
 @endsection
