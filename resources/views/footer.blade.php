@@ -18,12 +18,12 @@
 						<h4 class="widget-title">Thông tin</h4>
 						<div>
 							<ul>
-								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Web Design</a></li>
-								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Web development</a></li>
-								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Marketing</a></li>
-								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Tips</a></li>
-								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Resources</a></li>
-								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Illustrations</a></li>
+								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Áo crop-top</a></li>
+								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Áo hoodie</a></li>
+								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Quần tây</a></li>
+								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Áo thun</a></li>
+								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Trong nước</a></li>
+								<li><a href="blog_fullwidth_2col.html"><i class="fa fa-chevron-right"></i> Toàn quốc</a></li>
 							</ul>
 						</div>
 					</div>
@@ -37,7 +37,7 @@
 								<i class="fa fa-map-marker"></i>
 								<p>Địa chỉ: Số 21 Nguyễn Văn Bảo, P.3, Q.Gò Vấp, TP-Hồ Chí Minh</p>
 								<p>Email  : shopesport@gmail.com</p>
-								<p>SDT	  : 0906-866-405 (Quản lý Tài)</p>
+								<p>SDT	  : 0812-658-447 (Quản lý Phát)</p>
 							</div>
 						</div>
 					</div>
@@ -58,7 +58,7 @@
 	</div> <!-- #footer -->
 	<div class="copyright">
 		<div class="container">
-			<p class="pull-left">Bản quyền của EsportVN. (&copy;) 2020</p>
+			<p class="pull-left">Bản quyền của Zag Heroez Miraculous. (&copy;) 2021</p>
 			<p class="pull-right pay-options">
 				<a href="#"><img src="source/assets/dest/images/pay/master.jpg" alt="" /></a>
 				<a href="#"><img src="source/assets/dest/images/pay/pay.jpg" alt="" /></a>

@@ -24,17 +24,17 @@
 			<div class="space50">&nbsp;</div>
 			<div class="row">
 				<div class="col-sm-8">
-					<h2>Các chi nhánh cửa hàng</h2>
+					<h2 style="color:red;" >Các chi nhánh cửa hàng</h2>
 					<div class="space20">&nbsp;</div>
 					<p>
-						Chi nhánh 1: 466 Tân Kỳ Tân Quý, P.Sơn Kỳ, Q.Tân Phú, Tp.HCM</br>
-						Chi nhánh 2: 12 Nguyễn Văn Bảo, Q.Gò Vấp, Tp.HCM </br>
-						Chi nhánh 3: 815 Lũy Bán Bích, P.Tân Thành, Q.Tân Phú, Tp.HCM </br>
-						Chi nhánh 4: 21 Tô Ký, Q.12, Tp.HCM </br>
-						Chi nhánh 5: 468 Tân Kỳ Tân Quý, P.Sơn Kỳ, Q.Tân Phú, Tp.HCM</br>
+						Chi nhánh 1: 21 Nguyễn Văn Bảo, Phường 3, Q.Gò Vấp, TP-Hồ Chí Minh</br>
+						Chi nhánh 2: 21 Nguyễn Oanh, Phường 6, Q.Gò Vấp, TP-Hồ Chí Minh</br>
+						Chi nhánh 3: 24 An Phú Đông, TP-Hồ Chí Minh </br>
+						Chi nhánh 4: 24,linh trung, Q.Thủ Đức, TP-Hồ Chí Minh </br>
+						Chi nhánh 5: Thủ đức, đường số 17, khu phố 3, Hiệp Bình Chánh, Thủ Đức, Thành phố Hồ Chí Minh</br>
 					</p>
 					</br></br>
-					<h2>Hổ trợ</h2>
+					<h2 style="color:red;" >Hổ trợ</h2>
 					<p>
 						<strong>Sản phẩm mới mua bị lỗi:</strong> Khách hàng có thể gọi điện hay ra trực tiếp cửa hàng để được hoàn trả hoặc đổi mới sản phẩm </br>  
 						<strong>Sản phẩm mới mua bị lỗi sẽ được xử lý trong vòng 48 tiếng nếu qua 48 tiếng shop không chịu trách nhiệm. Xin cảm ơn quý khách.</strong></br>
@@ -43,28 +43,26 @@
 					
 				</div>
 				<div class="col-sm-4">
-					<h2>Thông tin liên hệ</h2>
+					<h2 style="color:red;" >Thông tin liên hệ</h2>
 					<div class="space20">&nbsp;</div>
 
 					<h6 class="contact-title">Số điện thoại</h6>
 					<p>
-						Hotline		   : 18008541<br>
-						SDT Quản lý    : 090 686 64 05 (Mr.Tài)<br>
-						SDT nhân viên 1: 093 409 43 11 (Mr.Phú</br>
-						SDT nhân viên 2: 094 656 24 67 (Ms.Sang)</br>
-						SDT nhân viên 3: 033 963 67 91 (Mr.Trí)
+						Hotline		   : 18005871<br>
+						SDT Quản lý    : 081 265 84 47 (Mr.Phát)<br>
+						SDT nhân viên 1: 012 345 67 89 (Mr.teo)</br>
 					</p>
 					<div class="space20">&nbsp;</div>
-					<h6 class="contact-title">Địa chỉ mail</h6>
+					<h6 class="contact-title" style="color:red;" >Địa chỉ mail</h6>
 					<p>
-						Gmail Congty: shopesport@gmail.com </br>
+						Gmail Congty: popoxy123@gmail.com </br>
 						<a href="http://gmail.com">Hỏi đáp xin hãy gửi mail</a>
 					</p>
 					<div class="space20">&nbsp;</div>
-					<h6 class="contact-title">Trang web</h6>
+					<h6 class="contact-title" style="color:red;">Trang web</h6>
 					<p>
 						http://localhost:88/laravel/public/index </br>
-						<a href="http://localhost:88/laravel/public/index">EsportVN.com</a>
+						<a href="http://localhost:88/laravel/public/index">ZagHeroezMiraculous.com</a>
 					</p>
 				</div>
 			</div>

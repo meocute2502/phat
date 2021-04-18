@@ -6,7 +6,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Category
+                        <h1 class="page-header">Category 
                             <small>Edit</small>
                         </h1>
                     </div>
@@ -52,7 +52,7 @@
                 </div>
                 <!-- /.row -->
             </div>
-            <!-- /.container-fluid -->
+            <!-- /.container-fluid --> 
         </div>
         <!-- /#page-wrapper -->
          @endsection

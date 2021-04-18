@@ -105,15 +105,20 @@
 										<div class="payment_box payment_method_cheque" style="display: none;">
 											Chuyển tiền đến tài khoản sau:
 											<br>- Số tài khoản: 123 456 789
-											<br>- Chủ TK: Đinh Anh Tài
-											<br>- Ngân hàng ACB, Chi nhánh TPHCM
+											<br>- Chủ TK: Nguyễn Tấn Phát
+											<br>- Ngân hàng AGIBANK, Chi nhánh TPHCM
 										</div>						
 									</li>
 									
 								</ul>
 							</div>
-
-							<div class="text-center"><button type="submit" class="beta-btn primary" href="#">Đặt hàng <i class="fa fa-chevron-right"></i></button></div>
+						@if(Auth::check())
+						<div class="text-center"><button type="submit" class="beta-btn primary" href="#">Đặt hàng <i class="fa fa-chevron-right"></i></button></div>
+						@else
+						<ul type="none" style="text-align:center;border: 2px solid;width: 20%;margin-left: 225px">
+						<li><a href="admin/dangnhap">Đăng nhập</a></li>
+						</ul>
+						@endif
 						</div> <!-- .your-order -->
 					</div>
 				</div>

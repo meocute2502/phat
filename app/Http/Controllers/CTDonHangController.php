@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\BillDetail;
 use App\Bill;
+use App\Product;
 
 class CTDonHangController extends Controller
 {

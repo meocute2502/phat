@@ -35,26 +35,26 @@
                             <div class="form-group">
                                 <label>Nhà cung cấp:</label>
 								<select style="margin-left: 30px" type="id_supplier" class="wc-select" name="id_supplier" placeholder="nhập lại nhà cung cấp" value="{{$sanpham->id_supplier}}">
-									<option value="1">Converse VN</option>
-									<option value="2">Nike VN</option>
-									<option value="3">Adidas VN</option>
-									<option value="4">Vans VN</option>
-									<option value="5">Yeezy VN</option>
-									<option value="6">Authentic VN</option>
-									<option value="7">Gucci VN</option>
+									<option value="1">Áo crop-top</option>
+									<option value="2">Áo Hoodie</option>
+									<option value="3">Quần tây nam</option>
+									<option value="4">thun</option>
+									<option value="5">Đồ bộ</option>
+									<option value="6">Áo cardigan</option>
+									<option value="7">Quần ống rộng </option>
 								</select>
                             </div>
 							
 							<div class="form-group">
                                 <label>Thể loại:</label>
 								<select style="margin-left: 68px" type="id_type" class="wc-select" name="id_type" placeholder="nhập lại thể loại" value="{{$sanpham->id_type}}">
-									<option value="1">Converse</option>
-									<option value="2">Nike</option>
-									<option value="3">Adidas</option>
-									<option value="4">Vans</option>
-									<option value="5">Yeezy</option>
-									<option value="6">Dép Authentic</option>
-									<option value="7">Gucci</option>
+									<option value="1">Crop-top</option>
+									<option value="2">Hoodie</option>
+									<option value="3">Quần tây</option>
+									<option value="4">Áo thun</option>
+									<option value="5">Đồ bộ</option>
+									<option value="6">Áo cardigan</option>
+									<option value="7">Quần ống rộng</option>
 								</select>
                             </div>
 

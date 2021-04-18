@@ -6,7 +6,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">User
+                        <h1 class="page-header">User 
                             <small>Danh sách</small>
                         </h1>
                     </div>
@@ -17,6 +17,7 @@
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Email</th>
+								<th>Gender</th>
                                 <th>Quyền</th>
                                 <th>Delete</th>
                                 <th>Edit</th>
@@ -28,6 +29,7 @@
                                 <td>{{$u->id}}</td>
                                 <td>{{$u->full_name}}</td>
                                 <td>{{$u->email}}</td>
+								<td>{{$u->gender}}</td>
                                 <td>
                                     @if($u->quyen == 1)
                                         {{"Admin"}}

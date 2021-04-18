@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
 <div style="background-color: #ccccff">
-<div class="inner-header">
+<div class="inner-header" style="background-color: #ccccff">
 		<div class="container">
 			<div class="pull-left">
 				<h6 class="inner-title">Sản phẩm {{$sanpham->name}}</h6>
@@ -47,7 +47,7 @@
 
 							<p>Số lượng còn lại: {{$sanpham->quantity}}</p>
 							<div class="single-item-options">
-								<select class="wc-select" name="color">
+								<!-- <select class="wc-select" name="color">
 									<option>Số lượng</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -59,8 +59,13 @@
 									<option value="8">8</option>
 									<option value="9">9</option>
 									<option value="10">10</option>
-								</select>
-								<a class="add-to-cart" href="{{route('themgioihang',$sanpham->id)}}"><i class="fa fa-shopping-cart"></i></a>
+								</select> -->
+								<form action="{{route('themgioihang',$sanpham->id)}}">
+									<input type="number" value="1" min="1" max="{{$sanpham->quantity}}" name="number-product">
+									<button type="submit" class="add-to-cart" ><i class="fa fa-shopping-cart"></i></button>
+								</form>
+								
+								<!-- <a class="add-to-cart" href="{{route('themgioihang',$sanpham->id)}}"><i class="fa fa-shopping-cart"></i></a> -->
 								<div class="clearfix"></div>
 							</div>
 						</div>
@@ -73,7 +78,7 @@
 							
 						</ul>
 
-						<div class="panel" id="tab-description">
+						<div class="panel" id="tab-description" style="background-color: #ccccff">
 							<p>{{$sanpham->description}}</p>
 						</div>
 					</div>
@@ -164,6 +169,6 @@
 					</div> <!-- best sellers widget -->
 				</div>
 			</div>
-		</div> <!-- #content -->
+		</div> <!-- #content --->
 	</div> <!-- .container -->
 @endsection

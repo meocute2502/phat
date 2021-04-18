@@ -34,7 +34,7 @@ class TinTucController extends Controller
     		]
     	);
         $tintuc = new News;
-		$tintuc->id_user = $reg->id_user;
+		$tintuc->id_user = $req->id_user;
         $tintuc->title = $req->title;
         $tintuc->content = $req->content;
         $tintuc->image = $req->image;

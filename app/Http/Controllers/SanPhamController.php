@@ -18,7 +18,7 @@ class SanPhamController extends Controller
 
     public function postThem(Request $req){
         $this->validate($req,
-            [
+            [ 
 				'name'=>'required|min:3|max:100',
                 'id_supplier'=>'required',
 				'id_type'=>'required',

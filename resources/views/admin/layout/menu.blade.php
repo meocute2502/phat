@@ -44,20 +44,11 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
+						<li>
                             <a href="admin/user/danhsach"><i class="fa fa-users fa-fw"></i> User<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="admin/user/them">Thêm</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-						<li>
-                            <a href="admin/tintuc/danhsach"><i class="fa fa-newspaper-o fa-fw"></i> Tin Tức<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="admin/tintuc/them">Thêm</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

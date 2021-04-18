@@ -6,7 +6,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Sản phẩm
+                        <h1 class="page-header">Sản phẩm 
                             <small>Danh sách các sản phẩm</small>
                         </h1>
                     </div>

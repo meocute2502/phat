@@ -6,7 +6,7 @@
 						<div class="bannercontainer" >
 					    <div class="banner" >
 								<ul>
-									@foreach($slide as $sl);
+									@foreach($slide as $sl)
 									<!-- THE FIRST SLIDE -->
 									<li data-transition="boxfade" data-slotamount="20" class="active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0;">
 						            <div class="slotholder" style="width:100%;height:100%;" data-duration="undefined" data-zoomstart="undefined" data-zoomend="undefined" data-rotationstart="undefined" data-rotationend="undefined" data-ease="undefined" data-bgpositionend="undefined" data-bgposition="undefined" data-kenburns="undefined" data-easeme="undefined" data-bgfit="undefined" data-bgfitend="undefined" data-owidth="undefined" data-oheight="undefined">
@@ -32,7 +32,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="beta-products-list">
-							<h4>Sản phẩm mới</h4>
+							<h4>Tất cả sản phẩm</h4>
 							<div class="beta-products-details">
 								<p class="pull-left">Tìm thấy {{count($new_product)}} sản phẩm</p>
 								<div class="clearfix"></div>
@@ -40,13 +40,13 @@
 
 							<div class="row">
 								@foreach($new_product as $new)
-								<div class="col-sm-3">
+								<div style="margin-left: 0px"class="col-sm-3">
 									<div class="single-item">
 										@if($new->promotion_price!=0)
 										<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
 										@endif
 										<div class="single-item-header">
-											<a href="{{route('chitietsanpham',$new->id)}}"> <img src="source/image/product/{{$new->image}}" alt="" height="250.px">   </a>
+											<a href="{{route('chitietsanpham',$new->id)}}"> <img src="source/image/product/{{$new->image}}" alt="" height="250.px"></a>
 										</div>
 										<div class="single-item-body">
 											<a href="{{route('chitietsanpham',$new->id)}}"><p class="single-item-title">{{$new->name}}</p></a>
@@ -77,6 +77,19 @@
 						<div class="space50">&nbsp;</div>
 
 						<div class="beta-products-list">
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
+							</br>
 							<h4>Sản phẩm khuyến mãi</h4>
 							<div class="beta-products-details">
 								<p class="pull-left">Tìm thấy {{count($sanpham_khuyenmai)}} sản phẩm</p>
@@ -90,7 +103,7 @@
 											<a href="{{route('chitietsanpham',$spkm->id)}}"><img src="source/image/product/{{$spkm->image}}" alt="" height="250px"></a>
 										</div>
 										<div class="single-item-body">
-											<a href="{{route('chitietsanpham',$spkm->id)}}"><p class="single-item-title">{{$spkm->name}}</p></a>
+											<a href="{{route('chitietsanpham',$spkm->id)}}"><p class="single-item-title" >{{$spkm->name}}</p></a>
 											<span class="flash-del">{{number_format($spkm->unit_price)}} VND</span>
 											<span class="flash-sale">{{number_format($spkm->promotion_price)}} VND</span>
 											</p>
@@ -107,7 +120,7 @@
 								<div class="row" style="float:right">{{$sanpham_khuyenmai->links()}}</div>
 						</div> <!-- .beta-products-list -->
 					</div>
-				</div> <!-- end section with sidebar and main content -->
+				</div> <!-- end section with sidebar and main content --->
 			</div> <!-- .main-content -->
 		</div> <!-- #content -->
 @endsection

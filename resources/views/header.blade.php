@@ -3,8 +3,8 @@
 			<div class="container">
 				<div class="pull-left auto-width-left">
 					<ul class="top-menu menu-beta l-inline">
-						<li><a href="{{route('lienhe')}}"><i class="fa fa-home"></i><b> CHÀO MỪNG BẠN ĐÃ ĐẾN VỚI SHOP GIÀY DÉP ESPORTS VIETNAM</b></a></li>
-						<li><a href="{{route('lienhe')}}"><i class="fa fa-phone"></i><b>Liên hệ: 0906-866-405</b></a></li>
+						<li><a href="{{route('lienhe')}}"><i class="fa fa-home"></i><b> Chào Mừng Bạn Đã Đến Với Shop Quần Áo Zag Heroez Miraculous</b></a></li>
+						<li><a href="{{route('lienhe')}}"><i class="fa fa-phone"></i><b>Liên hệ: 0812-658-447</b></a></li>
 					</ul>
 				</div>
 				<ul class="nav navbar-top-links navbar-right">
@@ -16,7 +16,7 @@
 						@if(Auth::check())
 						<li><a href="admin/theloai/danhsach"><b>Chào bạn {{Auth::user()->full_name}}</b></a></li>
 						<ul class="dropdown-menu dropdown-user">
-						<li><a href="./thong-tin"><b>    Thông tin cá nhân</b></a></li>
+						<li><a href=""><b>    Thông tin cá nhân</b></a></li>
 						<li><a href="{{route('logout')}}">   Đăng xuất</a></li></ul>
 						@else
 						<li><a href="./dang-ki"><b>Đăng ký</b></a></li>
@@ -31,7 +31,7 @@
 		<div class="header-body">
 			<div class="container beta-relative">
 				<div class="pull-left">
-					<a href="index.html" id="logoshop.jpg"><img src="source/image/slide/logoshop.jpg" width="150px" style="margin-bottom: 20px;" alt=""></a>
+					<a href="index" id="logoshop.jpg"><img src="source/image/slide/logo.jpg" width="150px" style="margin-bottom: 20px;" alt=""></a>
 				</div>
 				<div class="pull-right beta-components space-left ov">
 					<div class="space10">&nbsp;</div>
@@ -46,7 +46,7 @@
 						
 						<div class="cart">
 							<div class="beta-select"><i class="fa fa-shopping-cart"></i> 
-							Giỏ hàng (@if(Session::has('cart')){{Session('cart')->totalQty}}
+							Giỏ hàng(@if(Session::has('cart')){{Session('cart')->totalQty}}
 							@else trống @endif)
 							<i class="fa fa-chevron-down"></i></div>
 							<div class="beta-dropdown cart-body">
@@ -97,7 +97,7 @@
 								@endforeach
 							</ul>
 						</li>
-						<li><a href="{{route('gioithieu')}}">Giới thiệu</a></li>
+						<li><a href="{{route('gioithieu')}}">Tin tức</a></li>
 						<li><a href="{{route('lienhe')}}">Liên hệ</a></li>
 					</ul>
 					<div class="clearfix"></div>

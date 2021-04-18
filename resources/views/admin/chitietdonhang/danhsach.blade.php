@@ -16,6 +16,7 @@
                             <tr align="center">
                                 <th>ID_Bill</th>
 								<th>ID_Product</th>
+								<th>Products</th>
                                 <th>Quantity</th>
                                 <th>Unit_Price</th>
                                 <th>Delete</th>
@@ -27,6 +28,7 @@
                             <tr class="odd gradeX" align="center">
                                 <td>{{$ctdh->id}}</td>
 								<td>{{$ctdh->id_product}}</td>
+								<td>{{$ctdh->name}}</td>
 								<td>{{$ctdh->quantity}}</td>
 								<td>{{$ctdh->unit_price}}</td>
 								<td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/chitietdonhang/xoa/{{$ctdh->id}}">Delete</a></td>
@@ -40,5 +42,5 @@
             </div>
             <!-- /.container-fluid -->
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /#page-wrapper --->
          @endsection

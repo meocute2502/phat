@@ -42,7 +42,7 @@
                                 <input class="form-control" name="image" placeholder="Nhập tên thể loại" />
                             </div>
                             
-                            <button type="submit" class="btn btn-default">Category Add</button>
+                            <button type="submit" class="btn btn-default">Add category </button>
                             <button type="reset" class="btn btn-default">Reset</button>
                         <form>
                     </div>

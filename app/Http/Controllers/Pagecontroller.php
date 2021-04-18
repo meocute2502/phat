@@ -12,6 +12,7 @@ use App\Bill;
 use App\BillDetail;
 use App\User;
 use App\Supplier;
+use App\Employeess;
 use Hash;
 use Auth;
 
@@ -51,17 +52,24 @@ class Pagecontroller extends Controller
     public function getGioiThieu(){
     	return view('page.gioithieu');
     }
+	public function getThongTin(){
+    	return view('page.thongtin');
+    }
+	
     public function getAddtoCart(Request $red,$id){
+        $qty = (int)$red->get('number-product');
         $product =Product::find($id);
         $oldCart =Session('cart')?Session::get('cart'):null;
         $cart =new Cart($oldCart);
-        $cart->add($product,$id);
+        $cart->add($product, $id, $qty);
         $red->Session()->put('cart',$cart);
+        $product->decrement('quantity', $qty);
         return redirect()->back();
     }
     public function getDelItemCart($id){
         $oldCart =Session('cart')?Session::get('cart'):null;
         $cart =new Cart($oldCart);
+        Product::find($id)->increment('quantity',$cart->totalQty);
         $cart->removeItem($id);
         if(count($cart->items)>0){
             Session::put('cart',$cart);
@@ -80,16 +88,18 @@ class Pagecontroller extends Controller
     }
 
     public function getpostCheckout(Request $red){
-        $cart =Session::get('cart');        
-       
-	   $customer = new Customer;
-        $customer->name = $red->name;
+        $cart =Session::get('cart');   
+		$user = new User();
+		
+	  $customer = new Customer;
+		$customer->id_user = Auth::user()->id;
+		$customer->name = $red->name;
         $customer->gender = $red->gender;
         $customer->email = $red->email;
         $customer->address = $red->address;
         $customer->phone_number = $red->phone;
         $customer->note = $red->notes;
-        $customer->save();
+		$customer->save();
 
         $bill = new Bill;
         $bill->id_customer = $customer->id;
@@ -112,11 +122,12 @@ class Pagecontroller extends Controller
         return redirect()->back()->with('thongbao','Đặt hàng thành công');
     }
     public function getLogin(){
-        return view('page.trangchu');
+        return view('page.dangnhap');
     }
     public function getSignin(){
         return view('page.dangki');
     }
+	
     public function postSignin(Request $req){
         $this->validate($req,
             [

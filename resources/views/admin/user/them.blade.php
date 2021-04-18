@@ -6,7 +6,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">User
+                        <h1 class="page-header">User 
                             <small>Thêm</small>
                         </h1>
                     </div>
@@ -34,6 +34,7 @@
                                 <label>Email</label>
                                 <input type="email" class="form-control" name="email" placeholder="Nhập email" />
                             </div>
+							
                             <div class="form-group">
                                 <label>Password</label>
                                 <input type="password" class="form-control" name="password" placeholder="Nhập password" />
@@ -42,6 +43,11 @@
                                 <label>Nhập lại password</label>
                                 <input type="password" class="form-control" name="passwordre" placeholder="Nhập lại password" />
                             </div>
+							<div class="form-block">
+							<label>Giới tính </label>
+							<input id="gender" type="radio" class="input-radio" name="gender" value="nam" checked="checked" style="width: 10%"><span style="margin-right: 10%">Nam</span>
+							<input id="gender" type="radio" class="input-radio" name="gender" value="nữ" style="width: 10%"><span>Nữ</span>
+						</div>
                             <div class="form-group">
                                 <label>Quyền người dùng</label>
                                 <label class="radio-inline">

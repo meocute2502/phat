@@ -42,6 +42,7 @@ class UserController extends Controller
     	$user ->full_name = $req->full_name;
     	$user->email = $req->email;
     	$user->password =bcrypt($req->password);
+		$user->gender = $req->gender;
     	$user->quyen = $req->quyen;
     	$user->save();
     	return redirect('admin/user/them')->with('thanhcong','Thêm thành công');
@@ -66,6 +67,7 @@ class UserController extends Controller
         );
         $user = User::find($id);
         $user ->full_name = $req->full_name;
+		$user ->gender = $req->gender;
         $user->quyen = $req->quyen;
 
 

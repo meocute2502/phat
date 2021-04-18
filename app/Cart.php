@@ -16,18 +16,18 @@ class Cart
 		}
 	}
 
-	public function add($item, $id){
+	public function add($item, $id, $qty = 1){
 		$giohang = ['qty'=>0, 'price' => $item->unit_price, 'item' => $item];
 		if($this->items){
 			if(array_key_exists($id, $this->items)){
 				$giohang = $this->items[$id];
 			}
 		}
-		$giohang['qty']++;
+		$giohang['qty']+= $qty;
 		$giohang['price'] = $item->unit_price * $giohang['qty'];
 		$this->items[$id] = $giohang;
-		$this->totalQty++;
-		$this->totalPrice += ($item->promotion_price == 0 ?  $item->unit_price : $item->promotion_price );
+		$this->totalQty+= $qty;
+		$this->totalPrice += ($item->promotion_price == 0 ?  $item->unit_price : $item->promotion_price ) * $this->totalQty;
 	}
 	//xóa 1
 	public function reduceByOne($id){

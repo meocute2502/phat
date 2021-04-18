@@ -20,6 +20,7 @@
                         <thead>
                             <tr align="center">
                                 <th>ID</th>
+								<th>ID_USER</th>
                                 <th>Tên</th> 
                                 <th>Gới tính</th> 
                                 <th>Email</th>
@@ -34,6 +35,7 @@
                             @foreach($khachhang as $kh)
                             <tr class="odd gradeX" align="center">
                                 <td>{{$kh->id}}</td>
+								<td>{{$kh->id_user}}</td>
 								<td>{{$kh->name}}</td>
                                 <td>{{$kh->gender}}</td>
                                 <td>{{$kh->email}}</td>
@@ -48,7 +50,7 @@
                 </div>
                 <!-- /.row -->
             </div>
-            <!-- /.container-fluid -->
+            <!-- /.container-fluid --> 
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /#page-wrapper --->
          @endsection

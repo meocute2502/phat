@@ -28,7 +28,7 @@
 					</div>
 					<div class="col-sm-9">
 						<div class="beta-products-list">
-							<h4>Sản phẩm</h4>
+							<h4 style="color:red;">Sản phẩm</h4>
 							<div class="beta-products-details">
 								<p class="pull-left">Tìm kiếm {{count($sp_theoloai)}} Sản phẩm</p>
 								<div class="clearfix"></div>
@@ -45,7 +45,7 @@
 											<a href="{{route('chitietsanpham',$sp->id)}}"><img src="source/image/product/{{$sp->image}}" alt="" height="250px"></a>
 										</div>
 										<div class="single-item-body">
-											<p class="single-item-title">{{$sp->name}}</p>
+											<p class="single-item-title" >{{$sp->name}}</p>
 											<p class="single-item-price" style="font-size: 18px">
 												@if($sp->promotion_price !=0)
 												<span class="flash-del">{{number_format($sp->unit_price)}} VND</span>
@@ -69,14 +69,14 @@
 						<div class="space50">&nbsp;</div>
 
 						<div class="beta-products-list">
-							<h4>Sản phẩm khác</h4>
+							<h4 style="color:red;">Sản phẩm khác</h4>
 							<div class="beta-products-details">
 								<p class="pull-left">Tìm kiếm {{count($sp_khac)}} sản phẩm</p>
 								<div class="clearfix"></div>
 							</div>
 							<div class="row">
 								@foreach($sp_khac as $sp_k)
-								<div class="col-sm-4">
+								<div class="col-sm-3">
 									<div class="single-item">
 										@if($sp_k->promotion_price!=0)
 										<div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
@@ -109,7 +109,7 @@
 							
 						</div> <!-- .beta-products-list -->
 					</div>
-				</div> <!-- end section with sidebar and main content -->
+				</div> <!-- end section with sidebar and main content --->
 
 
 			</div> <!-- .main-content -->

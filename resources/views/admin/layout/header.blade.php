@@ -34,5 +34,5 @@
             <!-- /.navbar-top-links -->
 
             @include('admin.layout.menu')
-            <!-- /.navbar-static-side -->
+            <!-- /.navbar-static-side --->
         </nav>

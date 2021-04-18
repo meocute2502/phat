@@ -8,13 +8,13 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="beta-products-list">
-							<h4>Tìm kím</h4>
+							<h4>Tìm kiếm</h4>
 							<div class="beta-products-details">
 								<p class="pull-left">Tìm thấy {{count($product)}} sản phẩm</p>
 								<div class="clearfix"></div>
 							</div>
 
-							<div class="row">
+							<div class="row" style="">
 								@foreach($product as $new)
 								<div class="col-sm-3">
 									<div class="single-item">
@@ -45,7 +45,7 @@
 								@endforeach
 							</div>
 							
-						</div> <!-- .beta-products-list -->
+						</div> <!-- .beta-products-list --->
 
 						
 					</div>
