@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+ 
 use Illuminate\Http\Request;
 use App\BillDetail;
 use App\Bill;
@@ -11,7 +11,19 @@ class CTDonHangController extends Controller
 {
    public function getDanhSach(){
        	$ctdonhang = BillDetail::all();
-        return view('admin.chitietdonhang.danhsach',['ctdonhang'=>$ctdonhang]);  
+        $result = [];
+        foreach ($ctdonhang as $val) {
+          $productResult = Product::where('id',$val->id_product)->first();
+          $result_item = [
+            "id"         => $val->id,
+            "id_product" => $val->id_product,
+            "name"       => $productResult->name,
+            "quantity"   => $val->quantity,
+            "unit_price" => $val->unit_price,
+          ];
+          array_push($result, $result_item);
+        }
+        return view('admin.chitietdonhang.danhsach',['ctdonhang'=>$result]);  
     }
 	
 	/*public function getSua($id){

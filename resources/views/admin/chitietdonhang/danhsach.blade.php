@@ -26,12 +26,12 @@
                         <tbody>
                             @foreach($ctdonhang as $ctdh)
                             <tr class="odd gradeX" align="center">
-                                <td>{{$ctdh->id}}</td>
-								<td>{{$ctdh->id_product}}</td>
-								<td>{{$ctdh->name}}</td>
-								<td>{{$ctdh->quantity}}</td>
-								<td>{{$ctdh->unit_price}}</td>
-								<td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/chitietdonhang/xoa/{{$ctdh->id}}">Delete</a></td>
+                                <td>{{$ctdh["id"]}}</td>
+								<td>{{$ctdh["id_product"]}}</td>
+								<td>{{$ctdh["name"]}}</td>
+								<td>{{$ctdh["quantity"]}}</td>
+								<td>{{$ctdh["unit_price"]}}</td>
+								<td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="admin/chitietdonhang/xoa/{{$ctdh['id']}}">Delete</a></td>
                                 
                             </tr>
                             @endforeach

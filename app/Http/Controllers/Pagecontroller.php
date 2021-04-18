@@ -57,7 +57,7 @@ class Pagecontroller extends Controller
     }
 	
     public function getAddtoCart(Request $red,$id){
-        $qty = (int)$red->get('number-product');
+        $qty = isset($req["number-product"]) ? (int)$red->get('number-product') : 1;
         $product =Product::find($id);
         $oldCart =Session('cart')?Session::get('cart'):null;
         $cart =new Cart($oldCart);
